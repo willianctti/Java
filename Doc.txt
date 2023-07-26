@@ -55,3 +55,149 @@ e todas as variáveis do java:
 
 
     }
+
+
+
+
+
+
+
+
+
+			Imprimir variaveis no console
+
+A inicialização da variável tem que vir antes de usa-la:
+
+public class App {
+    public static void main(String[] args) throws Exception {
+       String nomeCompleto;
+       nomeCompleto = "Willian nicoletti";
+        System.out.println(nomeCompleto);
+    }
+}
+
+
+public class App {
+    public static void main(String[] args) throws Exception {
+       String filme = "Vingadores";
+       int anoLancmento = 2015; 
+       int duracao = 240;
+       double nota = 8.5;
+       
+       System.out.println(filme);
+       System.out.println(anoLancmento);
+       System.out.println(duracao);
+       System.out.println(nota);
+    }
+}
+
+
+concetenação no java é feita com um +:
+	System.out.println("O filme " + filme);
+
+
+imprimindo dados com o sysout.format:
+        System.out.format("O filme %s ", filme);
+
+
+imprimir mensagens de erro:
+	System.err.println(filme);
+
+	
+
+
+				Ler dados do teclado
+
+Classe Scanner
+um scanner é uma classe
+precisa ser instanciada
+
+ public static void main(String[] args) throws Exception {
+       int numero;
+    //    scanner -> classe
+       Scanner leitor = new Scanner(System.in);
+    }
+
+
+   int numero;
+    //    scanner -> classe
+       Scanner leitor = new Scanner(System.in);
+       numero = leitor.nextInt();
+
+       System.out.println("Numero é" + numero);
+
+
+
+		
+
+
+
+
+			Operações Aritméticos e a classe Math
+
+
+Soma
+   public static void main(String[] args) throws Exception {
+        int numeroA = 5;
+        int numeroB = 9;
+        int resultado = numeroA + numeroB;
+        System.out.println(resultado);
+    }
+
+o mesmo para subtração 
++ soma
+- subtração
+* multiplicação
+/ divisão
+
+
+
+
+incremento
+
+    public static void main(String[] args) throws Exception {
+        int contador = 0;
+        
+        System.out.println(contador);
+
+        contador = contador + 1;
+
+    }
+
+
+ou contador++ // contador = contador + 1;
+
+
+
+
+precedência dos sinais
+
+mesma lógica matématica que segue o padrão:
+1a = *
+2a = /
+3a = + ou -
+
+SE () então 1a (*, /)
+
+
+
+
+classe Math
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        int numeroA = -5;
+        int numerob = 15;
+
+        int resultado = Math.abs(numeroA); // Numero absoluto
+        int resultadoExpo = (int) Math.pow(10, 2); // exponênciação
+        double arredondarCima = Math.ceil(10.53) ;   // Arredondar num. p cima
+        double arredondaraixo = Math.floor(10.53) ;   // Arredondar num. p baixo
+
+
+
+    }
+}
+
+
+
