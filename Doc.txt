@@ -201,3 +201,89 @@ public class App {
 
 
 
+math.random
+
+      int dado6faces = (int) Math.random();  
+
+como a math.random retorna um double precisamos dar um cache (conversão)
+
+ou
+
+ public static void main(String[] args) throws Exception {
+      double dado6faces = Math.random();  
+      System.out.println(dado6faces);
+    }
+
+
+
+
+
+
+Classe random 
+  Random gerador = new Random();
+      int numero = gerador.nextInt(6);		//entre 1 e 6
+      System.out.println(numero);
+    }
+
+
+
+
+
+
+
+
+
+				Como criar condições em Java 
+
+
+public class App {
+    public static void main(String[] args) throws Exception {
+        /* 
+        >
+        <
+        <=
+        >=
+        ==
+        != 
+        
+
+        && 
+        !
+
+        */ 
+        boolean estaChovendo = false;
+        if (estaChovendo) {
+            System.out.println("ta chovendo");
+        } else {
+            System.out.println("nao ta chovendo");
+        }
+    }
+}
+
+
+Não muda muito de php, TS e js*********
+
+
+
+
+
+
+
+
+
+				Como usar Switch Case em Java
+
+ public static void main(String[] args) throws Exception {
+        String personagem = "Eu";
+        switch (personagem) {
+            case "Willian": 
+            System.out.println("Willian bonitão");
+                break;
+            case "Eu":
+            System.out.println("Esse é o certo");
+                break;
+            case "Leo":
+            System.out.println("Leo bonitão");
+                break;
+        } 
+    }
