@@ -92,7 +92,7 @@ public class App {
 }
 
 
-concetenação no java é feita com um +:
+concatenação no java é feita com um +:
 	System.out.println("O filme " + filme);
 
 
@@ -286,4 +286,61 @@ Não muda muito de php, TS e js*********
             System.out.println("Leo bonitão");
                 break;
         } 
+    }
+
+
+
+
+
+
+
+
+
+			Como criar estruturas de repetição 
+
+
+
+ public static void main(String[] args) throws Exception {
+
+      // While (enquanto)   
+      int contador = 0;
+      while (contador < 5) {
+        contador = contador + 1;
+        System.out.println("Ola");
+        System.out.println(contador);
+      }
+
+
+      // DO while
+      do {
+        contador = contador + 1;
+        System.out.println("Ola");
+        System.out.println(contador);
+      } while (contador < 5);
+
+
+      // For
+      for(contador = 1; contador < 10; contador++) {
+        System.out.println("Ola");
+      }
+
+    }
+
+
+
+
+
+
+
+			Como criar Arrays (vetores)
+
+	    String[] nomes = new String[5];
+
+        nomes[0] = "João";
+        nomes[1] = "WIllian";
+        nomes[2] = "Lucas";
+        nomes[3] = "Alex";
+        nomes[4] = "Fernando";
+
+        System.out.println(nomes[1]);
     }
