@@ -348,6 +348,19 @@ Não muda muito de php, TS e js*********
 
 
 
+        double[] temperaturas = new double[365];
+        temperaturas[0] = 31.3;
+        temperaturas[1] = 2.3;
+        temperaturas[2] = 50.3;
+        temperaturas[3] = 120.3;
+
+        System.out.println("o valor da temp do dia 1 é: " + temperaturas[0]);
+
+    }
+
+
+
+
 
 
 				Compiladores
@@ -357,3 +370,25 @@ Não muda muito de php, TS e js*********
 - ""		Lógicos
 - ""		Assignment
 - Precedência
+
+
+
+
+
+
+				For each
+
+
+      int[] notas = new int[10];
+
+        Random random = new Random();
+
+        for (int i=0; i<notas.length; i++) {
+            notas[i] = random.nextInt(10);
+        }
+
+        System.out.println("Usando o ForEach");
+        for (int nota : notas) {
+            System.out.println(nota);
+        }
+    }
