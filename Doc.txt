@@ -392,3 +392,55 @@ Não muda muito de php, TS e js*********
             System.out.println(nota);
         }
     }
+
+
+
+
+
+
+
+
+
+
+		
+			Orientação a Objetos: Classes e atributos
+
+
+Criação dos objetos:
+
+
+    public class Lampada {
+        String modelo;
+        String tensao;
+        int potencia;
+        String cor;
+        String tipoLuz;
+
+
+
+    }
+
+Classes e métodos simples:
+
+
+
+    public class Lampada {
+        String modelo;
+        String tensao;
+        int potencia;
+        String cor;
+        String tipoLuz;
+
+        void exibirAutonomia() {
+            System.out.println("A autonomia do carro é:" + tensao + tipoLuz);
+        }
+ }
+
+
+
+ Orientação a Objetos: Construtores: 	/** AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+
+
+
+
