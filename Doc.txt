@@ -623,4 +623,87 @@ condicionais.
 
 
 
+revendo POO
 
+public class App {
+    // saldo, agencia, numero e titular
+
+    double saldo;
+    int agencia;
+    int numero;
+    String titular;
+
+
+
+}
+
+molde da nossa classe
+a partir dele criaremos objetos
+criar obj === instanciar obj
+dentro do nosso main:
+
+new Conta();
+
+ainda não poderemos usar, por exemplo, o saldo da nossa classe.
+primeiro, precisamos instanciar uma variave;
+
+ primeiraConta = new Conta();
+
+
+mas isso ainda não funcionará. O Java é fortemente tipado. Precisamos 
+declarar o tipo da variável:
+
+Conta primeiraConta = new Conta();
+
+public class criaConta {
+    public static void main(String[] args) {
+        Conta primeiraConta = new Conta();
+        primeiraConta.saldo = 200;
+        System.out.println(primeiraConta.saldo);
+
+
+
+        Conta segundaConta = new Conta();
+        segundaConta.saldo = 50;
+        System.out.println(segundaConta.saldo);
+
+    }
+}
+
+
+para fazer a ação de depósito, faremos um método:
+
+public class Conta {
+    // saldo, agencia, numero e titular
+
+    double saldo;
+    int agencia;
+    int numero;
+    String titular;
+
+
+
+    void deposita(double valor) {
+
+    }
+}
+
+
+criamos uma classe para testar da seguinte forma:
+
+public class TestaMetodo {
+    public static void main(String[] args) {
+        Conta contaWillian = new Conta();
+
+        contaWillian.deposita(50);
+        contaWillian.saldo = 100;
+        System.out.println(contaWillian.saldo);
+    }
+}
+
+
+e na nossa classe principal definimos, no nosso método:
+
+  public void deposita(double valor) {
+        saldo = saldo + valor;
+    }
