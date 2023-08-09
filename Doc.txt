@@ -622,3 +622,5 @@ revendo variaveis, tipo flutuante, double.... true/false, escopo de variáveis..
 condicionais.
 
 
+
+
