@@ -707,3 +707,48 @@ e na nossa classe principal definimos, no nosso método:
   public void deposita(double valor) {
         saldo = saldo + valor;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+				Encapsulamento
+
+trabalhar via MÉTODOS
+getter e setters
+	NUUNCA ACESSAR UM ATRIBUTO DIRETAMENTE
+
+public class Conta {
+    // saldo, agencia, numero e titular
+
+    private double saldo;
+    int agencia;
+    int numero;
+    String titular;
+
+
+    public double getSaldo () {
+        return this.saldo;
+    }
+}
+
+
+
+
+
+public class testeSacaNegativo {
+    public static void main(String[] args) {
+        Conta conta = new Conta();
+        conta.deposita(100);
+        System.out.println(conta.getSaldo());
+    }
+}
+
