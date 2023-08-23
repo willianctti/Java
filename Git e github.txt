@@ -1,0 +1,9 @@
+git clone -> clona um repositório GIt existente para um novo diretório local.
+
+git commit -> grava alterações no repositório
+
+git pull - > puxa as alterações do repositório remoto para o local
+
+git push -> empurra as alterações do respositório local para o remoto
+
+
